@@ -23,7 +23,7 @@ a {
     color: #122947;
     border: 1px solid #b3bac1;
     border-radius: 2px;
-    padding: 13px 24px;
+    padding: 9px 24px;
     display: inline-block;
 }
 .social {
@@ -139,7 +139,7 @@ a {
     color: #122947;
     border: 1px solid #d6d6d6;
     border-radius: 2px;
-    padding: 13px 27px;
+    padding: 9px 27px;
     display: inline-block;
     margin-top: 10px;
 }
@@ -320,11 +320,15 @@ a {
     width: calc(670 / 1170 * 100%);
 }
 .individual-care-block > div {
-    max-width: 339px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     gap: 35px;
     align-items: flex-start;
+}
+.individual-care-block > div a {
+    padding: 9px 54px;
+    border: 1px solid #405266;
 }
 .individual-care-img {
     width: calc(670 / 1170 * 100%);
