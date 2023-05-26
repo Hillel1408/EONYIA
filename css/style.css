@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap');
 
+a {
+    pointer-events: none;
+}
 .title {
     font-weight: 500;
     font-size: 32px;
@@ -41,6 +44,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    min-width: 320px;
 }
 .header-container {
     max-width: 1200px;
@@ -330,4 +334,126 @@
     width: 100%;
     height: 452px;
     object-fit: cover;
+}
+
+@media (max-width: 920px) {
+    .intro-content h1 {
+        font-size: 38px;
+    }
+    .individual-care-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .individual-care-block {
+        width: 100%;
+        padding: 100px;
+    }
+    .individual-care-img {
+        margin-left: 0;
+        width: 100%;
+    }
+    .individual-care-block > div {
+        max-width: none;
+    }
+    .footer-content {
+        gap: 30px;
+    }
+}
+@media (max-width: 768px) {
+    .header {
+        justify-content: center;
+    }
+    .bestsellers-container {
+        flex-direction: column;
+    }
+    .bestsellers-content {
+        max-width: none;
+    }
+    .bestsellers-flex {
+        width: 100%;
+    }
+    .new-collection-content {
+        margin: 0 auto;
+        max-width: none;
+    }
+    .contacts-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .contacts-block {
+        width: 100%;
+    }
+    .contacts-map {
+        width: 100%;
+        margin-left: 0;
+    }
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+@media (max-width: 576px) {
+    .header {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .header-nav {
+        gap: 20px;
+    }
+    .intro-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .intro-item {
+        width: 100%;
+    }
+    .intro-content {
+        padding-top: 0;
+        width: 100%;
+        order: -1;
+    }
+    .intro-item img {
+        height: 300px;
+    }
+    .bestsellers-flex {
+        flex-direction: column;
+    }
+    .individual-care-block {
+        padding: 40px;
+    }
+    .title {
+        font-size: 24px;
+    }
+    .contacts-block {
+        padding: 40px;
+    }
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .footer-content ul {
+        gap: 20px;
+    }
+    .intro {
+        padding: 131px 0;
+    }
+    .bestsellers {
+        padding: 40px 0;
+    }
+    .individual-care {
+        padding: 40px 0;
+    }
+    .about-us {
+        padding: 40px 15px;
+    }
+    .contacts {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 370px) {
+    .footer-content ul {
+        flex-direction: column;
+        text-align: center;
+    }
 }
